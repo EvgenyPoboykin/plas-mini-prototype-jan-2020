@@ -1,0 +1,30 @@
+import styled from 'styled-components';
+import bg from '../../../assets/bg.png';
+export const Container = styled.div.attrs({ className: 'Body__container' })`
+    position: relative;
+    width: 500px;
+    height: 920px;
+    overflow: hidden;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 4fr repeat(7, 1fr) 3fr 40px;
+    grid-gap: 20px;
+    align-self: center;
+    justify-self: center;
+    padding: 20px;
+`;
+export const Bg = styled.img.attrs({ className: 'Body__content--bg' })`
+    position: absolute;
+    top: -1px;
+    left: -1px;
+    width: 502px;
+    height: 922px;
+    background-image: url(${bg});
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    object-fit: cover;
+    opacity: 0.7;
+    z-index: -1;
+    overflow: hidden;
+`;
