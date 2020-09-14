@@ -14,8 +14,8 @@ electronUpdaterCompatibility: 1.0.0
 
 files:
     - package.json
-    - electron.prod.js
-    - window.prod.js
+    - electron.js
+    - window.js
     - electron/ipc.js
     - public/
     - build/

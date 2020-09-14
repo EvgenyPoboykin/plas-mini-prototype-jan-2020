@@ -11,12 +11,12 @@ Electron Js
 
 ### Interface
 
-![image](https://drive.google.com/uc?export=view&id=1WtVwbBZjgUrZ4pDi4va0f0Rsv0Rq7dd_)
+![image](./preview/screen_1.png)
 
-![image](https://drive.google.com/uc?export=view&id=1jBV_hrmaopBiE1Vqn1sdQ7G4U0qdjmyY)
+![image](./preview/screen_2.png)
 
-![image](https://drive.google.com/uc?export=view&id=1Q-_CHZIM5X0Hifynic1tchp9t8JOSS51)
+![image](./preview/screen_3.png)
 
-![image](https://drive.google.com/uc?export=view&id=10Ckd6VVnztzfd1RXh8eRVwStSX5rXBVU)
+![image](./preview/screen_4.png)
 
 ### For Windows, Mac Os and Linux
