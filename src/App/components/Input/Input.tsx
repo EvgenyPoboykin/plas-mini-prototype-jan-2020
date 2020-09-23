@@ -13,7 +13,15 @@ const Input: React.FC<IInput> = memo(({ field, fieldName }) => {
     return (
         <Container id={field} block={InputBlock()}>
             <Label id={field}>{fieldName}</Label>
-            <InputField block={InputBlock()} id={field} defaultValue={state[field]} onKeyPress={(e) => EnterOnKeyPress(e, field, e.currentTarget?.value)} onKeyDown={(e) => TabKeyDown(e, field, e.currentTarget?.value)} onChange={(e) => ChangeInput(field, e.target.value)} onFocus={InputFocus} />
+            <InputField
+                block={InputBlock()}
+                id={field}
+                defaultValue={state[field]}
+                onKeyPress={(e) => EnterOnKeyPress(e, field, e.currentTarget?.value)}
+                onKeyDown={(e) => TabKeyDown(e, field, e.currentTarget?.value)}
+                onChange={(e) => ChangeInput(field, e.target.value)}
+                onFocus={InputFocus}
+            />
             {show === field ? <Error id={field}>!</Error> : null}
         </Container>
     );
