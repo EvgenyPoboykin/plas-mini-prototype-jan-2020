@@ -12,6 +12,12 @@ artifactName: '${productName}-${version}-${platform}.${ext}'
 
 electronUpdaterCompatibility: 1.0.0
 
+publish:
+    provider: github
+    owner: EvgenyPoboykin
+    repo: plas-mini-prototype-jan-2020
+    token: 120a07991beb4e572d340a71fff72befee8aa774
+
 files:
     - package.json
     - electron.js

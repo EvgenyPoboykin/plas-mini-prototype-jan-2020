@@ -20,6 +20,10 @@
         "styled-components": "^5.1.1",
         "typescript": "^3.7.5"
     },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/EvgenyPoboykin/plas-mini-prototype-jan-2020.git"
+    },
     "create_components_path": "./src/App/components/",
     "scripts": {
         "r-start": "react-scripts start",
@@ -32,7 +36,8 @@
         "build:mac": "ELECTRON_DEVELOPMENT_MODE=0 npm run r-build && electron-builder --mac",
         "build:win": "ELECTRON_DEVELOPMENT_MODE=0 npm run r-build && electron-builder --win --ia32 --x64",
         "start": "ELECTRON_DEVELOPMENT_MODE=1 concurrently \"cross-env BROWSER=none npm run r-start\" \"wait-on http://localhost:3000 && npm run electron-start\"",
-        "build": "ELECTRON_DEVELOPMENT_MODE=0 npm run r-build && electron-builder --win --ia32 --x64 --mac"
+        "build": "ELECTRON_DEVELOPMENT_MODE=0 npm run r-build && electron-builder --win --ia32 --x64 --mac",
+        "publish": "sudo ELECTRON_DEVELOPMENT_MODE=0 npm run r-build && electron-builder --win --ia32 --x64 --mac -p always"
     },
     "eslintConfig": {
         "extends": "react-app"
