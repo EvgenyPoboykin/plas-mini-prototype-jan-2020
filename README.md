@@ -1,4 +1,4 @@
-## PLAS mini
+## PLAS mini (Powerlifting Automatic Score Desktop Version)
 
 ## Powerlifting Score Calculator (part of Powerlifting Automatic Score)
 

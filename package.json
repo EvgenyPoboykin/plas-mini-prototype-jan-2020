@@ -1,6 +1,7 @@
 {
     "name": "plas-mini",
     "version": "0.1.0",
+    "description": "Powerlifting Automatic Score Mini (Desktop Version)",
     "author": "Evgeny Poboykin",
     "main": "public/electron.js",
     "private": true,
@@ -37,7 +38,7 @@
         "build:win": "ELECTRON_DEVELOPMENT_MODE=0 npm run r-build && electron-builder --win --ia32 --x64",
         "start": "ELECTRON_DEVELOPMENT_MODE=1 concurrently \"cross-env BROWSER=none npm run r-start\" \"wait-on http://localhost:3000 && npm run electron-start\"",
         "build": "ELECTRON_DEVELOPMENT_MODE=0 npm run r-build && electron-builder --win --ia32 --x64 --mac",
-        "publish": "sudo ELECTRON_DEVELOPMENT_MODE=0 npm run r-build && electron-builder --win --ia32 --x64 --mac -p always"
+        "publish": "ELECTRON_DEVELOPMENT_MODE=0 npm run r-build && electron-builder --win --ia32 --x64 --mac -p always"
     },
     "eslintConfig": {
         "extends": "react-app"
@@ -59,6 +60,7 @@
         "cross-env": "^7.0.2",
         "electron": "^10.1.1",
         "electron-builder": "^22.8.0",
+        "electron-updater": "^4.3.5",
         "env-cmd": "^10.1.0",
         "wait-on": "^5.2.0"
     }

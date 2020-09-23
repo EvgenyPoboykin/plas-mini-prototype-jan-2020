@@ -1,6 +1,7 @@
 const path = require('path');
 const electron = require('electron');
 const { ipc } = require('./electron/ipc');
+const { AppUpdater } = require('./updater.js');
 const { BrowserWindow } = electron;
 
 const Menu = electron.Menu;
@@ -37,6 +38,8 @@ exports.CreateWin = (app) => {
     const template = [];
     const newMenu = Menu.buildFromTemplate(template);
     Menu.setApplicationMenu(newMenu);
+
+    AppUpdater(mainWindow);
 
     return mainWindow;
 };
